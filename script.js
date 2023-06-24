@@ -5,7 +5,7 @@ const inputSearch = document.querySelector('.input');
 //fim seletores
 
 //adiciona click ao botao de pesquisa
-buttonSearch.addEventListener('click', (e) => {
+buttonSearch.addEventListener('click', () => {
     buscarUsuario();
 });
 
