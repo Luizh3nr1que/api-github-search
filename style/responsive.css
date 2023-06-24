@@ -35,6 +35,10 @@
     #bio {
         font-size: 14px;
     }
+
+    .search input::placeholder {
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width:388px) {
@@ -53,6 +57,15 @@
 
     .respostaApi {
         height: 580px;
+    }
+
+    .search input::placeholder {
+        font-size: 15px;
+    }
+
+    .search button {
+        width: 20%;
+        height: 35px;
     }
 }
 
