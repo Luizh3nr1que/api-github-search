@@ -47,6 +47,7 @@ function buscarUsuario() {
             const localApi = document.querySelector('#localApi');
             const blogApi = document.querySelector('#blogApi');
 
+
             //exibindo o conteudo na tela
             avatar.src = data.avatar_url;
             nameGit.textContent = data.login;
@@ -75,7 +76,6 @@ function buscarUsuario() {
 };
 
 function erro() {
-    const spin = document.querySelector('.spin').style.display = 'none';
     const header = document.querySelector('.header').style.display = 'none';
     const descricao = document.querySelector('.descricao').style.display = 'none';
     const descPerfil = document.querySelector('.descPerfil').style.display = 'none';
@@ -83,7 +83,6 @@ function erro() {
 }
 
 function notError() {
-
     const header = document.querySelector('.header').style.display = 'flex';
     const descricao = document.querySelector('.descricao').style.display = 'flex';
     const descPerfil = document.querySelector('.descPerfil').style.display = 'flex';
