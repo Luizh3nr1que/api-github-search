@@ -232,7 +232,8 @@ html {
     color: red;
     font-weight: 500;
     font-size: 25px;
-    margin-left: 140px;
+    width: 100%;
+    text-align: center;
     display: none;
 }
 
