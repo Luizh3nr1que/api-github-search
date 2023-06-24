@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <!-- fim css -->
+
+    <link rel="shortcut icon" href="icon/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Biblioteca normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fim Biblioteca normalize -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Search user GitHub</title>
+</head>
+
+<body>
+
+    <section class="container">
+
+        <div class="conteudo">
+
+
+            <div class="search">
+                <ion-icon class="iconSearch" name="search"></ion-icon>
+                <input class="input" type="text" placeholder="Digite um user do GitHub..">
+                <button class="procurar">Search</button>
+            </div>
+
+            <div class="respostaApi">
+                <div class="header">
+                    <img id="avatar" src="">
+
+                    <div class="perfil">
+
+                        <div class="nomes">
+                            <div id="nameGit"></div>
+                            <div id="nameReal"></div>
+                        </div>
+
+                        <div id="bio"></div>
+                    </div>
+                </div>
+
+                <div class="erro">Perfil não encontrado verifique e tente novamente</div>
+                <div class="spin"></div>
+
+                <div class="mainRespostaApi">
+
+                    <div class="descricao">
+                        <div class="repo">
+                            <h1>Repos</h1>
+                            <div id="repositorioApi"></div>
+                        </div>
+
+                        <div class="followers">
+                            <h1>followers</h1>
+                            <div id="followersApi"></div>
+                        </div>
+
+                        <div class="following">
+                            <h1>following</h1>
+                            <div id="followindApi"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="descPerfil">
+
+                        <div class="location">
+                            <span><ion-icon name="location"></ion-icon></span>
+                            <div id="localApi"></div>
+                        </div>
+
+                        <div class="link">
+                            <span><ion-icon name="link"></ion-icon></span>
+                            <div id="blogApi"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--  | © Desenvolvido por luiz Henrique 🚀 -->

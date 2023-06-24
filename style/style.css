@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;1,500&family=Barlow:ital,wght@0,200;0,400;0,600;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Alegreya', serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #0e1e2c;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo {
+    width: 100%;
+    max-width: 50em;
+    height: 660px;
+}
+
+.search {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.search input {
+    background-color: #132b3f;
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 0px 0px 0px 80px;
+    font-size: 20px;
+    color: white;
+}
+
+.search input::placeholder {
+    font-size: 20px;
+    color: gray;
+}
+
+.search .iconSearch {
+    position: absolute;
+    left: 25px;
+    font-size: 30px;
+    color: #2a679d;
+}
+
+.search button {
+    position: absolute;
+    right: 20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: #42a7ff;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all .3s ease-in-out;
+}
+
+.search button:hover {
+    transition: all .3s ease-in-out;
+    background-color: #3279b8;
+    letter-spacing: 1px;
+}
+
+
+.respostaApi {
+    background-color: #132b3f;
+    height: 450px;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 30px;
+    display: none;
+    position: relative;
+}
+
+.respostaApi .header {
+    height: 155px;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.header #avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 155px;
+    border: 2px solid #3279b8;
+}
+
+.header .perfil {
+    width: 32em;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 30px;
+}
+
+.header #nameGit {
+    color: white;
+    font-size: 27px;
+}
+
+.header #nameReal {
+    color: #3279b8;
+    font-size: 18px;
+}
+
+.header #bio {
+    color: rgb(173, 173, 173);
+}
+
+.descricao {
+    margin-top: 25px;
+    background-color: #0e1e2c;
+    border-radius: 20px;
+    width: 32em;
+    float: right;
+    height: 120px;
+    margin-right: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}
+
+.descricao .repo h1 {
+    font-size: 18px;
+    color: rgb(173, 173, 173);
+}
+
+.descricao #repositorioApi {
+    color: white;
+    font-size: 25px;
+}
+
+.descricao .followers h1 {
+    font-size: 18px;
+    color: rgb(173, 173, 173);
+}
+
+.descricao #followersApi {
+    color: white;
+    font-size: 25px;
+}
+
+.descricao .following h1 {
+    font-size: 18px;
+    color: rgb(173, 173, 173);
+}
+
+.descricao #followindApi {
+    color: white;
+    font-size: 25px;
+}
+
+
+.descPerfil {
+    margin-top: 35px;
+    width: 32em;
+    float: right;
+    height: 40px;
+    margin-right: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: none;
+
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location span {
+    font-size: 25px;
+    color: white;
+}
+
+.location #localApi {
+    color: rgb(173, 173, 173);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.link span {
+    font-size: 25px;
+    color: white;
+}
+
+.link #blogApi {
+    color: rgb(173, 173, 173);
+}
+
+.erro {
+    color: red;
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 140px;
+    display: none;
+}
+
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spin {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #3279b8;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 10em;
+    left: 22.6em;
+    animation: spin 1s infinite linear;
+    display: none;
+}

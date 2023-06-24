@@ -1,0 +1,52 @@
+@media screen and (max-width:636px) {
+    .descricao {
+        float: left;
+        width: 100%;
+    }
+
+    .descPerfil {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:484px) {
+    .header #nameGit {
+        font-size: 23px;
+    }
+
+    .header #nameReal {
+        font-size: 18px;
+    }
+
+    #bio {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:388px) {
+    .header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .perfil {
+        width: 100% !important;
+    }
+
+    .descricao {
+        margin-top: 150px;
+    }
+
+    .respostaApi {
+        height: 580px;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .search button {
+        width: 70px;
+        height: 40px;
+    }
+}
