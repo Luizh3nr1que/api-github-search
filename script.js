@@ -4,11 +4,12 @@ const respostaApi = document.querySelector('.respostaApi');
 const inputSearch = document.querySelector('.input');
 //fim seletores
 
-//adiciona click ao botao e ao input com enter
+//adiciona click ao botao de pesquisa
 buttonSearch.addEventListener('click', (e) => {
     buscarUsuario();
 });
 
+//colocando pra poder puxar resultado com o enter
 inputSearch.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         buscarUsuario();
@@ -18,6 +19,7 @@ inputSearch.addEventListener('keydown', (e) => {
 
 //funçao da api 
 function buscarUsuario() {
+
     //mostra o container da resposta
     respostaApi.style.display = 'block';
 
@@ -62,7 +64,6 @@ function buscarUsuario() {
 
 
 
-
             if (data.blog === '') {
                 blogApi.textContent = 'Não Encontrado';
             }
@@ -78,6 +79,7 @@ function buscarUsuario() {
         });
 };
 
+//function para tirar todos os elementos do container e mostrar so as mensagem
 function erro() {
     const header = document.querySelector('.header').style.display = 'none';
     const descricao = document.querySelector('.descricao').style.display = 'none';
@@ -85,6 +87,7 @@ function erro() {
     const erro = document.querySelector('.erro').style.display = 'block';
 }
 
+//function pra mostrar os elementos e tira o erro
 function notError() {
     const header = document.querySelector('.header').style.display = 'flex';
     const descricao = document.querySelector('.descricao').style.display = 'flex';
@@ -92,10 +95,9 @@ function notError() {
     const erro = document.querySelector('.erro').style.display = 'none';
 }
 
-
+//function do botao clear limpando o input e a resposta
 function clearConteudo() {
     inputSearch.value = '';
     respostaApi.style.display = 'none';
 }
-
 const clear = document.querySelector('.clear').addEventListener('click', clearConteudo);
