@@ -89,3 +89,10 @@ function notError() {
     const descPerfil = document.querySelector('.descPerfil').style.display = 'flex';
     const erro = document.querySelector('.erro').style.display = 'none';
 }
+
+
+function clearConteudo() {
+    respostaApi.style.display = 'none';
+}
+
+const clear = document.querySelector('.clear').addEventListener('click', clearConteudo);
