@@ -33,7 +33,7 @@ function buscarUsuario() {
             if (response.status === 404) {
                 erro();
             } else {
-                notError();
+                noError();
                 return response.json();
             }
         })
@@ -88,7 +88,7 @@ function erro() {
 }
 
 //function pra mostrar os elementos e tira o erro
-function notError() {
+function noError() {
     const header = document.querySelector('.header').style.display = 'flex';
     const descricao = document.querySelector('.descricao').style.display = 'flex';
     const descPerfil = document.querySelector('.descPerfil').style.display = 'flex';
