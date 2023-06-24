@@ -48,6 +48,7 @@ function buscarUsuario() {
             const blogApi = document.querySelector('#blogApi');
 
 
+
             //exibindo o conteudo na tela
             avatar.src = data.avatar_url;
             nameGit.textContent = data.login;
@@ -58,6 +59,8 @@ function buscarUsuario() {
             followindApi.textContent = data.following;
             localApi.textContent = data.location;
             blogApi.textContent = data.blog;
+
+
 
 
             if (data.blog === '') {

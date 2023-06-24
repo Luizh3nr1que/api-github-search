@@ -117,10 +117,12 @@ body {
     margin-left: 30px;
 }
 
+
 .header #nameGit {
     color: white;
     font-size: 27px;
 }
+
 
 .header #nameReal {
     color: #3279b8;
@@ -283,4 +285,3 @@ body {
     text-align: center;
     display: none;
 }
-
