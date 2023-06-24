@@ -143,6 +143,8 @@ body {
     display: none;
 }
 
+
+
 .descricao .repo h1 {
     font-size: 18px;
     color: rgb(173, 173, 173);
@@ -151,6 +153,7 @@ body {
 .descricao #repositorioApi {
     color: white;
     font-size: 25px;
+    margin-top: -10px;
 }
 
 .descricao .followers h1 {
@@ -161,6 +164,7 @@ body {
 .descricao #followersApi {
     color: white;
     font-size: 25px;
+    margin-top: -10px;
 }
 
 .descricao .following h1 {
@@ -171,6 +175,7 @@ body {
 .descricao #followindApi {
     color: white;
     font-size: 25px;
+    margin-top: -10px;
 }
 
 
