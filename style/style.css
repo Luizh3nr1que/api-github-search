@@ -48,6 +48,7 @@ body {
     padding: 0px 0px 0px 80px;
     font-size: 20px;
     color: white;
+    transition: .5s ease-in-out;
 }
 
 .search input::placeholder {
@@ -63,8 +64,7 @@ body {
 }
 
 .search input:focus {
-    border: 1px solid #42a7ff;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 0 0 .12vw #42a7ff;
     transition: .5s ease-in-out;
 }
 
