@@ -84,7 +84,7 @@ function erro() {
     const header = document.querySelector('.header').style.display = 'none';
     const descricao = document.querySelector('.descricao').style.display = 'none';
     const descPerfil = document.querySelector('.descPerfil').style.display = 'none';
-    const erro = document.querySelector('.erro').style.display = 'block';
+    const erro = document.querySelector('.erro').style.display = 'flex';
 }
 
 //function pra mostrar os elementos e tira o erro

@@ -284,10 +284,22 @@ body {
 }
 
 .erro {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.erro span {
     color: rgb(255, 87, 87);
     font-weight: 500;
     font-size: 25px;
-    width: 100%;
-    text-align: center;
-    display: none;
+}
+
+.erro img {
+    width: 250px;
 }
