@@ -92,6 +92,7 @@ function notError() {
 
 
 function clearConteudo() {
+    inputSearch.value = '';
     respostaApi.style.display = 'none';
 }
 
